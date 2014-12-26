@@ -1,0 +1,86 @@
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+
+
+public class FifteenFrame extends JFrame {
+
+	int[][] grid;//the board
+	int[][] gridSolved;//what the board looks like when solved
+	ArrayList<Integer> record=new ArrayList<Integer>(); //stores all player-caused shifts as integers to allow the player to undo and redo moves
+	
+	public FifteenFrame() {
+		this(4,4);
+	}
+	
+	public FifteenFrame(int rows,int cols) {
+		grid=new int[rows][cols];
+		gridSolved=new int[rows][cols];
+		for(int i=0;i<rows;i++){
+			for(int j=0;j<cols;j++){
+				gridSolved[i][j]=i*grid[0].length+j+1;
+				if(i+j==rows+cols-2)gridSolved[i][j]=0;
+			}
+		}
+		grid=gridSolved;
+		randomize();
+	}
+
+	public void randomize(){
+		for(int i=0;i<grid[0].length*grid.length;i++){
+			shift(new Double(Math.random()*4+1).intValue());   //uses the shift method with a random input from 1 to 4
+		}
+	}
+	
+	//meant to shift the blank box over by one in the given direction 1=right 2=down 3=left 4=up
+	public void shift(int direction){
+		if(direction==1&&blankx()<grid[0].length-1){
+		int temp=grid[blanky()][blankx()+1];
+		grid[blanky()][blankx()+1]=0;
+		grid[blanky()][blankx()]=temp;
+		}
+		else if(direction==2&&blanky()<grid.length-1){
+			int temp=grid[blanky()+1][blankx()];
+			grid[blanky()+1][blankx()]=0;
+			grid[blanky()][blankx()]=temp;
+			}
+		else if(direction==3&&blankx()>1){
+			int temp=grid[blanky()][blankx()-1];
+			grid[blanky()][blankx()-1]=0;
+			grid[blanky()][blankx()]=temp;
+			}
+		else if(direction==4&&blanky()>1){
+			int temp=grid[blanky()-1][blankx()];
+			grid[blanky()-1][blankx()]=0;
+			grid[blanky()][blankx()]=temp;
+			}
+	}
+	
+	public int blanky(){
+		for(int i=0;i<grid.length;i++){
+			for(int j=0;j<grid[0].length;j++){
+				if(grid[i][j]==0)return i;
+			}
+		}
+		return -1;
+	}
+	
+	public int blankx(){
+		for(int i=0;i<grid.length;i++){
+			for(int j=0;j<grid[0].length;j++){
+				if(grid[i][j]==0)return j;
+			}
+		}
+		return -1;
+	}
+	
+	public void printSelf(){
+		for(int i=0;i<grid.length;i++){
+			for(int j=0;j<grid[0].length;j++){
+				System.out.print(grid[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
