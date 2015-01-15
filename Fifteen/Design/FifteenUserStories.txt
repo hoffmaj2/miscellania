@@ -1,0 +1,8 @@
+The program, when run, creats a small window containing a 4x4 puzzle.
+The puzzle is layed out on a grid, with each cell containing a number from 1 to n*m-1,
+where n and m are the dimensions of the grid.
+The positions of the tiles are random, but are always solvable.
+On one side of the grid is a row of buttons, labeled "reset", "new puzzle", "resize", "undo", and "redo"
+The buttons work and will reset, resize, undo, redo, etc. the puzzle.
+One tile in the grid is blank, and can be moved by clicking on the adjacent tiles.
+When solved, (all of the tiles are in numerical order) the puzzle displays a short "you win" message.
