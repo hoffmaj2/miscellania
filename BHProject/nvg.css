@@ -1,0 +1,42 @@
+/*#nvg {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #777777;
+}
+
+#nvg li {
+	
+    float: right;
+    margin-left: 2%;
+    margin-right: 2%;
+   display: inline;
+}
+
+#nvg li a {
+display: inline;
+    /*display: block;*/
+    /*width: 60px;*/
+  /*  background-color: #dddddd;
+}
+
+#welcome{
+font-weight:bold;
+background-color: #eeeeee;
+border: 3px solid gold;
+}
+
+#cchest{
+width:10vw;
+height:10vw;
+}
+
+#frm{
+text-align:center;
+background-color: black;
+}
+
+#front-page{
+
+}*/

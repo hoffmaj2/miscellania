@@ -1,0 +1,181 @@
+body {
+	background-image: url("cctiles.jpg");
+	background-repeat: repeat-both;
+}
+
+.speak-button {
+	width: 20vw;
+	height: 20vw;
+	font: 25pt san-sarif;
+	white-space: normal;
+}
+
+.content-button {
+	margin: 0;
+	/*margin-top:1vw;*/
+}
+
+#buttons {
+	width: 90vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
+}
+
+button {
+	padding: 0%;
+	margin: 0%;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.sqr1 {
+	width: 28vw;
+	height: 28vw;
+	margin: 1vw;
+	border: 1px solid black;
+	style: block;
+	text-align: center;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.banner {
+	position: fixed;
+	/*top:0px;*/
+	width: 100vw;
+	/*background-image: url("dots.png");
+	background-repeat: repeat-both;*/
+	background-color: #eeeeff;
+	padding-bottom: 10px;
+	height: 60px;
+	z-index: +1;
+}
+
+.banner h1 {
+	position: relative;
+	left: -3vw;
+	text-align: center;
+	color: black;
+	font-size: auto;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.btntxt {
+	background-color: rgba(255,255,255,.75);
+}
+
+#nvg {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #777777;
+}
+
+#nvg li {
+
+	float: right;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: inline;
+}
+
+#nvg li a {
+	display: inline;
+	/*display: block;*/
+	/*width: 60px;*/
+	background-color: #dddddd;
+}
+
+#welcome {
+	font-weight: bold;
+	background-color: #eeeeee;
+	border: 3px solid gold;
+}
+
+#cchest {
+	width: 10vw;
+	height: 10vw;
+}
+
+#frm {
+	text-align: center;
+	/*background-image: url("dots.png");
+	background-repeat: repeat-both;*/
+	background-color: #eeeeff;
+}
+
+.itembox {
+	display: inline-block;
+	width: 80vw;
+	margin-top: 13vw;
+	margin-left: 10vw;
+	/*background-image: url("dots.png");
+	background-repeat: repeat-both;*/
+	background-color: #eeeeff;
+	border: 3px solid black;
+}
+
+#buttons {
+	margin-top: 13vw;
+}
+
+.iim {
+}
+
+#lld {
+	font-size: 20pt;font-weight;
+}
+
+.mib {
+	display: inline;
+}
+
+.uib {
+	text-align: center;
+	font-weight: bold;
+}
+
+.lib {
+	display: inline;
+	text-align: center;
+}
+
+.lib * {
+	border: 1px solid black;
+}
+
+#td1 {
+	width: 50%;
+}
+
+#searchBar {
+	text-align: center;
+	/*background-image: url("dots.png");
+	background-repeat: repeat-both;*/
+	background-color: #eeeeff;
+	border: 3px solid black;
+	padding: 48px;
+}
+
+#txtare {
+	width: 25%;
+	left: 37.5%;
+}
+
+#fm {
+	text-align: center;
+	/*background-image: url("dots.png");
+	background-repeat: repeat-both;*/
+	background-color: #eeeeff;
+	border: 3px solid black;
+}
+
+#tidc{
+display:none;
+}

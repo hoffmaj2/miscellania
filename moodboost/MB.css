@@ -1,0 +1,143 @@
+button{
+	padding:0;
+	margin:0;
+}
+
+div{
+	padding:0;
+	margin:0;
+	border:0	;
+}
+
+h1{
+	padding:0;
+	margin:0;
+	color:#FFFFFF;
+	font-weight: bold;
+}
+
+.banner	{
+	position:fixed;
+	top:0px;
+	width:100vw;
+	background-color: black;
+	padding-bottom: 10px;
+	height:60px;
+	z-index: +1;
+}
+
+.banner h1{
+	position:relative;
+	left:-3vw;
+	text-align: center;
+	color:white;
+	font-size: auto;
+	height:100%;
+	vertical-align: middle;
+}
+
+.banner img {
+	height:80%;
+	float:left;
+}
+
+.sqr1{
+	width: 28vw;
+	height:28vw;
+	margin:1vw;
+	style: block;
+	text-align: center;
+}
+
+.sqr1:hover{
+	background-position:0 +50px;
+}
+
+#front-page{
+	background-color: #5328BF;
+	background-image:url(http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
+	background-size: contain;
+	background-origin:border-box;
+}
+
+#main-page{
+	background-color: #5328BF;
+	background-image:url(http://c3e308.medialib.glogster.com/media/cd/cd526905e568a6ca76608763a0f0849e3e49f895d1730808e9e849253a014958/blue-pattern-twitter-background.jpg);
+	background-size: contain;
+	background-origin:border-box;
+}
+
+#top-main {
+	width:100vw;
+}
+
+#top-left {
+	float:left;
+	padding-top:5vw;
+	padding-left:5vw;
+	padding-right:5vw;
+}
+
+.speak-button{
+	width:20vw;
+	height:20vw;
+	font: 25pt san-sarif;
+	white-space: normal;
+}
+
+#top-middle{
+	width:40vw;
+	float:left;
+	padding-right:5vw;
+	padding-top:5vw;
+	text-align: center;
+}
+
+#top-middle h1{
+	margin-bottom: 3vw;
+}
+
+#main-img{
+	width:15vw;
+}
+
+#top-right {
+	float:left;
+	width:30vw;
+	text-align: center;
+	padding-right:10vw;
+	padding-top:5vw;
+}
+
+#top-right ul{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+
+.content-button{
+	margin:0;
+	margin-top:1vw;
+}
+
+
+#bottom-main{
+	width:100vw;
+	padding:0px;
+	padding-top:5vw;
+	margin:0px;
+	float:left;
+	text-align: center;
+	color:#FFFFFF;
+	font-weight: bold;
+}
+
+#buttons {  
+  width: 90vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+#txtare{
+	width:50vw;
+}
